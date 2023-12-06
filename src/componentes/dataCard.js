@@ -1,6 +1,6 @@
-import catCard from "./catCard"
+import CatCard from "./catCard";
 
-const dataCard = () => {
+const DataCard = () => {
   const dataCat = [{
     names: 'Catinho',
     images: "/catinho.jpg",
@@ -17,10 +17,9 @@ const dataCard = () => {
   return (
     <>
       <div className={"flex"}>
-        --
         {
           dataCat.map(cardCat => {
-            return <catCard names={cardCat.names} images={cardCat.images} />
+            return <CatCard names={cardCat.names} images={cardCat.images} />
           })
         }
       </div>
@@ -28,4 +27,4 @@ const dataCard = () => {
   )
 }
 
-export default dataCard;
+export default DataCard;

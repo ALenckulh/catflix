@@ -1,4 +1,4 @@
-const catCard = ({names, images}) => {
+const CatCard = ({names, images}) => {
     return <>
     <div id="animation-carousel" class="relative w-full" data-carousel="static">
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -10,4 +10,4 @@ const catCard = ({names, images}) => {
     </>
 }
 
-export default catCard
+export default CatCard
