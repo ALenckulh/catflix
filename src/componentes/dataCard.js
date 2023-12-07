@@ -19,7 +19,7 @@ const DataCard = () => {
       <div className={"flex"}>
         {
           dataCat.map(cardCat => {
-            return <CatCard names={cardCat.names} images={cardCat.images} />
+            return <CatCard names={cardCat.names} images={cardCat.images}/>
           })
         }
       </div>

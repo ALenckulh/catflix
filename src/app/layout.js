@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-       {/* <header className='absolute flex justify-start h-[8rem] w-screen pl-14 bg-gradient-to-b from-[#181410] via-[#181410a2]'> 
+       <header className='absolute flex justify-start h-[8rem] w-screen pl-14 bg-gradient-to-b from-[#181410] via-[#181410a2]'> 
         <button className='w-1/12 font-mono text-[#E5D437] text-2xl flex items-center justify-around'><Image src={marca} width={100} height={100} className="h-12 text-[#E5D437]"/></button>
-        </header> */}
+        </header>
         {children}
         </body>
     </html>
