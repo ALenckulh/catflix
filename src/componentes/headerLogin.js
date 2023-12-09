@@ -1,11 +1,15 @@
+"use client"
 import { UserIcon } from '@heroicons/react/24/outline'
+import { useRouter } from 'next/navigation';
 
-const HeaderLogin = () => { 
+
+const HeaderLogin = () => {
+    const router = useRouter()
     return (
         <>
-        <header className='absolute flex justify-end h-[8rem] w-screen pr-14'> 
-        <button className='w-1/12 font-mono text-[#E5D437] text-2xl flex items-center justify-around'>Entrar <UserIcon  class="h-12 text-[#E5D437]"/></button>
-        </header>
+            <button className='font-mono text-[#E5D437] text-2xl flex items-center' onClick={() => {
+                router.push("/login")
+            }}>Entrar <UserIcon className="h-12 text-[#E5D437]" /></button>
         </>
     )
 }

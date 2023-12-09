@@ -6,14 +6,16 @@ const tontito = "/tontito.jpg"
 
 const ContentPage = () => {
     return <>
-    <div className="w-screen h-screen bg-[#221D18] flex justify-center items-center">
-        <div className=" flex w-11/12 justify-around">
-            <Image src={catinho} width={300} height={400}  alt="catinho"/>
-            <Image src={gatito} width={300} height={400}  alt="catinho"/>
-            <Image src={tontito} width={300} height={400}  alt="catinho"/>
-            <Image src={tontito} width={300} height={400}  alt="catinho"/>
+        <div className="h-screen w-screen bg-[#221D18] flex justify-center items-center">
+            <div className=" w-screen h-9/12 flex flex-col items-center pt-36">
+                <div className=" flex w-11/12 justify-around">
+                    <DataCard />
+                </div>
+                <div className=" flex w-11/12 justify-around">
+                    <DataCard />
+                </div>
+            </div>
         </div>
-    </div>
     </>
 }
 

@@ -1,7 +1,9 @@
 const login = () => {
+    const background = "/background.svg"
+
  
  return <>
-<section class="bg-[#221D18]">
+<section style={{ backgroundImage: `url(${background})` }} className="bg-[#221D18]">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
       </a>
@@ -28,9 +30,9 @@ const login = () => {
                             <label for="remember" class="text-gray-500">Lembre de mim</label>
                           </div>
                       </div>
-                      <a href="#" class="font-mono text-sm font-medium text-primary-600 hover:underline">Esqueceu a senha?</a>
+                      <a href="#" class="font-mono text-sm font-medium text-[#E5D437] hover:underline">Esqueceu a senha?</a>
                   </div>
-                  <form action="homePage" method="get">
+                  <form action="contentPage" method="get">
                   <button type="submit" class="font-mono w-full font-bold text-[#181410] bg-[#E5D437] hover:bg-[#CEBF32] focus:ring-4 focus:outline-none focus:ring-[#7E7423] rounded-lg text-sm px-5 py-2.5 text-center">Entrar</button>
                   </form> 
                   <p class="font-mono text-sm font-light text-gray-500">
