@@ -1,0 +1,21 @@
+# *q is our domain
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+
+  root /var/www/html;
+  index index.html index.htm index.nginx-debian.html;
+
+  server_name q*;
+
+
+ location / {
+        proxy_pass http://localhost:3000;
+        add_header X-Custom-HeaderHome "Value for Custom Header Home";
+    }
+  
+  # for letsencrypt
+  location ~ /.well-known {
+    allow all;
+  }
+}
